@@ -17,9 +17,123 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/mystyle.css">
 	
-	
+
+	<link rel="stylesheet" href="http://coolcarousels.frebsite.nl/css/layout.css">
+
 	<script src="js/libs/modernizr-2.5.3.min.js"></script>
-	
+	<script src="http://coolcarousels.frebsite.nl/js/jquery.carouFredSel.js"></script>
+	<script type="text/javascript" language="javascript">
+			SyntaxHighlighter.config.clipboardSwf = "/js/syntaxhighlighter/clipboard.swf";
+			SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript" language="javascript">
+			$(function() {
+				$('#carousel').carouFredSel({
+					width: $(window).width(),
+					height: $(window).height(),
+					align: false,
+					items: {
+						visible: 1,
+						width: 'variable',
+						height: 'variable'
+					}
+				});
+
+				$(window).resize(function() {
+					var newCss = {
+						width: $(window).width(),
+						height: $(window).height()
+					};
+					$('#carousel').css( 'width', newCss.width*4 );
+					$('#carousel').parent().css( newCss );
+					$('#carousel div').css( newCss );
+				}).resize();
+
+				$('select#fx').change(function() {
+					$('#carousel').trigger('configuration', ['auto.fx', $('select#fx').val()]);
+				});
+			});
+		</script>
+		<style type="text/css" media="all">
+			html, #c-carousel {
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			#c-carousel {
+				min-height: 600px;
+				min-width: 990px;
+			}
+			#c-carousel * {
+				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+				font-size: 14px;
+				color: #333;
+				line-height: 22px;
+			}
+			#wrapper {
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			.caroufredsel_wrapper {
+				width: 100% !important;
+				height: 100% !important;
+			}
+			#carousel div {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				float: left;
+			}
+			#carousel div img {
+				width: auto;
+				height: auto;
+				min-width: 100%;
+				min-height: 100%;
+			}
+			#text {
+				background-color: rgba(255, 255, 255, 0.8);
+				width: 350px;
+				height: 350px;
+				padding: 50px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -225px 0 0 -225px;
+				box-shadow: 0 0 50px #000;
+				border-radius: 20px;
+			}
+			#text h4 {
+				font-size: 33px;
+				line-height: 25px;
+				margin: 0 0 20px 0;
+			}
+			#text small, #text small * {
+				font-size: 12px;
+				color: #666;
+			}
+		
+		</style>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-5722599-10']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			
+			$(function() {
+				$("#c-cur-down").click(function() {
+					_gaq.push(["_trackPageview", "/current/download.html"]);
+				});
+				$("#c-cur-open").click(function() {
+					_gaq.push(["_trackPageview", "/current/open.html"]);
+				});
+			});
+		</script>
 </head>
 <body>
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
