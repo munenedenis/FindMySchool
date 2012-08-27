@@ -5,115 +5,32 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <!-- new element added-->    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>{{ page.title }}</title>
+	  <!-- new element added-->    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="description" content="Find My School">
+	  <!-- new element added-->    <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
 	<meta name="author" content="Code 4 Kenya | http://code4kenya.org">
-
-	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/mystyle.css">
 	
+	  <!-- new element added-->    <link rel="shortcut icon" href="../favicon.ico"> 
+      <!-- new element added-->    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+      <!-- new element added-->    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+	  <!-- new element added-->    <link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+	  <!-- new element added-->    	<noscript>
+			<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+		</noscript>
+	
 
 	<link rel="stylesheet" href="http://coolcarousels.frebsite.nl/css/layout.css">
 
 	<script src="js/libs/modernizr-2.5.3.min.js"></script>
-	<script src="http://coolcarousels.frebsite.nl/js/jquery.carouFredSel.js"></script>
-	<script type="text/javascript" language="javascript">
-			SyntaxHighlighter.config.clipboardSwf = "/js/syntaxhighlighter/clipboard.swf";
-			SyntaxHighlighter.all();
-		</script>
-		<script type="text/javascript" language="javascript">
-			$(function() {
-				$('#carousel').carouFredSel({
-					width: $(window).width(),
-					height: $(window).height(),
-					align: false,
-					items: {
-						visible: 1,
-						width: 'variable',
-						height: 'variable'
-					}
-				});
+	
 
-				$(window).resize(function() {
-					var newCss = {
-						width: $(window).width(),
-						height: $(window).height()
-					};
-					$('#carousel').css( 'width', newCss.width*4 );
-					$('#carousel').parent().css( newCss );
-					$('#carousel div').css( newCss );
-				}).resize();
-
-				$('select#fx').change(function() {
-					$('#carousel').trigger('configuration', ['auto.fx', $('select#fx').val()]);
-				});
-			});
-		</script>
-		<style type="text/css" media="all">
-			html, #c-carousel {
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-			#c-carousel {
-				min-height: 600px;
-				min-width: 990px;
-			}
-			#c-carousel * {
-				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-				font-size: 14px;
-				color: #333;
-				line-height: 22px;
-			}
-			#wrapper {
-				width: 100%;
-				height: 100%;
-				position: relative;
-			}
-			.caroufredsel_wrapper {
-				width: 100% !important;
-				height: 100% !important;
-			}
-			#carousel div {
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-				float: left;
-			}
-			#carousel div img {
-				width: auto;
-				height: auto;
-				min-width: 100%;
-				min-height: 100%;
-			}
-			#text {
-				background-color: rgba(255, 255, 255, 0.8);
-				width: 350px;
-				height: 350px;
-				padding: 50px;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin: -225px 0 0 -225px;
-				box-shadow: 0 0 50px #000;
-				border-radius: 20px;
-			}
-			#text h4 {
-				font-size: 33px;
-				line-height: 25px;
-				margin: 0 0 20px 0;
-			}
-			#text small, #text small * {
-				font-size: 12px;
-				color: #666;
-			}
-		
-		</style>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-5722599-10']);
@@ -138,25 +55,40 @@
 <body>
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	
-	<div class="container">
-		<div class="navbar">
-			<a class="brand" href="#">Find My School</a>
-			
-					<ul class="nav nav-tabs">
-						<li><a href="#">Find A School</a></li>
-						<li class="active"><a href="#">Compare schools</a></li>
-						<li><a href="#">Compare Counties</a></li>
-						<li><a href="#">Career Guide</a></li>
-					</ul>
-				</div>
-			</div>
-	
+
+	<!-- codrops nav bar new version-->
+<div class="container">
+      <!-- Codrops top bar -->
+             <div class="codrops-top">
+                <a href="http://tympanus.net/Tutorials/CSS3Accordion/">
+                    <strong>&laquo; Code4Kenya</strong>Find My School 
+                </a>
+                <span class="right">
+          <a href="lp2.html">Find A School</a>
+          <a href="p3.html">Compare Schools</a>
+          <a href="p4.html">Compare Counties</a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+
+
+            <!-- Signature Question -->
+
+<header>
+        <h1>Which <span>Secondary schools</span> would Accept me if i scored&nbsp<input class="input-small" type="text" placeholder="300">&nbsp </input>Marks? </h1>
+        <h2>enter your anticipated average examination marks:</h2>
+        <p class="codrops-demos">
+          <button class="btn btn-info" href="results.html">Find A School</button>
+          <button class="btn btn-info" href="#">Be More Specific</button>
+          <button class="btn btn-info" href="#">Analyze Marks</button>
+        </p>
+</header>	
 		
 		{{ content }}
 		
 	
 		<footer>
-					</br></br></br><p>&copy; code4kenya 2012</p>
+					</br></br></br><a href="http://www.code4kenya.org">&copy; code4kenya 2012</a>
 			
 		</footer>
 	
@@ -167,7 +99,17 @@
 	
 	<script src="/js/bootstrap.min.js"></script>
 	
-	
+<!-- new el added--><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!-- new element added-->    		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	  <!-- new element added-->    	<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider();
+				
+			});
+		</script>	
+
+
 	<script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
