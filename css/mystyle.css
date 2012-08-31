@@ -47,4 +47,6 @@ New Table Style for predicted Secondary Schools results.
 	background: #d0dafd;
 }
 
-#200000
+header {
+	margin-top: 50px;
+}
