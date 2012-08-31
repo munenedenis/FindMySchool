@@ -24,7 +24,7 @@ Table Style for predicted Secondary Schools results.
 	text-align: left;
 	border-collapse: collapse;
 	background: url('img/blurry.jpg') 330px 59px no-repeat;
-}
+	}
 #background-image th
 {
 	padding: 12px;
@@ -45,7 +45,7 @@ Table Style for predicted Secondary Schools results.
 #background-image tbody td
 {
 	background: url('img/back.png');
-}
+	}
 * html #background-image tbody td
 {
 	/* 
