@@ -10,6 +10,7 @@ This is a stylesheet to style Find My School and overide Bootstrap.
 
 .hero-unit{background-color: #5BDCF0;}
 
+hr{width:100%; margin:5px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
 
 /* ------------------------------------------------------------------------
 New Table Style for predicted Secondary Schools results. 
