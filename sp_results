@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Find My School
+layout: specify
+title: Specified Results
 section: results
 ---
 
@@ -24,10 +24,7 @@ section: results
 
             <tfoot>
               <tr>
-                <td colspan="5">--------------------------------------------------------------------------</td>
-              </tr>
-              <tr>
-                <td colspan="5">You will need to improve your marks to get into better ranked schools. All the best</td>
+                <td colspan="4">You will need to improve your marks to get into better ranked schools. All the best</td>
               </tr>
             </tfoot>
 
