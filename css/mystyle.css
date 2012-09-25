@@ -1,0 +1,150 @@
+/*
+
+Author: Code 4 Kenya
+Author URL: http://code4kenya.org
+
+This is a stylesheet to style Find My School and overide Bootstrap.
+*/
+
+.btn .btn-info{width:5px; height:20px; background-color: blue; margin-top: -20px;}
+
+.hero-unit{background-color: #5BDCF0;}
+
+hr{width:100%; margin:5px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
+
+
+
+header {
+	margin-top: 5px;
+	text-align: center;
+	font-weight: 100px;
+}
+
+/* CSS reset */
+html {
+/*	background:url('../img/bg.png') no-repeat center center; */
+	
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height:100%;
+	
+	/* The Magic */
+	background-size:cover;
+	/* General Demo Style */
+}
+
+body{
+	background: #e0e3ec url(../img/bg.png) repeat top left; 
+	font-weight: 100;
+	font-size: 15px;
+	color: #593741;
+	overflow-y: scroll;
+	margin-top: 5%;
+	padding:10px;
+    padding-bottom:45px;   /* Height of the footer */
+    min-height:100%;
+    text-align: center;
+}
+
+
+a{
+	color: #333;
+	text-decoration: none;
+}
+.container{
+	width: 90%;
+	position: relative;
+	text-align: center;
+
+}
+
+.row-fluid .span2{
+	background-color: #F0F0F0 ;
+	
+}
+.clr{
+	clear: both;
+}
+.container > header{
+	padding: 20px 30px 10px 30px;
+	margin: 0px 20px 10px 20px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.container > header h1{
+	font-size: 30px;
+	line-height: 35px;
+	position: relative;
+	font-weight: 400;
+	color: lightslategrey;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 0px 5px 0px;
+}
+.container > header h1 span{
+	color: lightskyblue;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+.container > header h2{
+	font-size: 16px;
+	font-style: italic;
+	color: #593741;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+/* Header Style */
+
+#testSlide3 {
+	display: inline-block;
+	border: 1px solid #b19099;
+	padding: 4px 10px 3px;
+	margin: 0px 3px;
+	color: #fff;
+	background: #111;
+}
+
+
+.btn .dropdown-toggle {
+	width:100%;
+}
+
+
+.center {
+	display: block;
+	padding-top: 80px;
+	text-align: -webkit-center;
+}
+
+
+footer {
+   
+   position: fixed;
+   left: 0;
+   margin: 0px;
+   bottom:0;
+   width:100%;
+   height:45px;   /* Height of the footer */
+   background: #111111;
+   box-shadow: 0 -1px 2px rgba(0,0,0,0.4);
+   z-index: 100000;
+}
+
+footer a{
+	color: #fff;
+	font-size: 12px;
+	left: 80%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+footer a:visited{
+	color: #00FF00;
+	font-size: 12px;
+	left: 80%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
