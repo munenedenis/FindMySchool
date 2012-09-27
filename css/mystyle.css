@@ -115,6 +115,20 @@ a{
 }
 
 
+.schoollist1 {
+	vertical-align: center;
+	margin-left: 50%;
+	display: block;
+	float: left;
+}
+
+.schoollist2 {
+	vertical-align: center;
+	margin-left: 50%;
+	display: block;
+	float: right;
+}
+
 footer {
    
    position: fixed;
