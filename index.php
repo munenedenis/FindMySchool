@@ -1,18 +1,14 @@
 <?php include('header.php'); ?>
     
-    <!-- The Landing Page Slider-->
+          
 
-<div class="center">
-   <h2><form name="kcpemarks" action="dttblstest.php" method="get">If I scored &nbsp&nbsp<input class="input-small" type="text" placeholder="500" id="kcpemarks" name="kcpemarks">&nbsp&nbspMarks<br /> 
+<header class="center">
+  
+  <h2 style="padding:30px 50px;"><form name="kcpemarks" action="dttblstest.php" method="get">If I scored &nbsp&nbsp<input class="input-small" type="text" placeholder="500" id="kcpemarks" name="kcpemarks">&nbsp&nbspMarks<br /> 
     In my final KCPE results ...<br />
-    which Secondary schools would Accept me<br /> </form></h2>
-                   
- <!--    <div class="btn-group">
-          <a href="results.html" class="btn btn-info">View Schools</a> 
-      <a href="sp_results.html" class="btn btn-info">Be More Specific</a> -->
-     <!--   </div>
--->
-        </div>
+    which Secondary schools would Accept me?<br /> </form></h2>
+       
+</header>
 
 
 

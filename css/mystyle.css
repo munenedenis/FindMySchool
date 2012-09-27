@@ -14,12 +14,6 @@ hr{width:100%; margin:5px 0;border:0;border-top:1px solid #eeeeee;border-bottom:
 
 
 
-header {
-	margin-top: 5px;
-	text-align: center;
-	font-weight: 100px;
-}
-
 /* CSS reset */
 html {
 /*	background:url('../img/bg.png') no-repeat center center; */
@@ -34,16 +28,16 @@ html {
 
 body{
 	background: #e0e3ec url(../img/bg.png) repeat top left; 
-	font-weight: 100;
 	font-size: 15px;
 	color: #593741;
-	overflow-y: scroll;
+	overflow-y: scroll; 
 	margin-top: 5%;
-	padding:10px;
+
     padding-bottom:45px;   /* Height of the footer */
     min-height:100%;
     text-align: center;
 }
+
 
 
 a{
@@ -51,8 +45,7 @@ a{
 	text-decoration: none;
 }
 .container{
-	width: 90%;
-	position: relative;
+
 	text-align: center;
 
 }
@@ -64,34 +57,7 @@ a{
 .clr{
 	clear: both;
 }
-.container > header{
-	padding: 20px 30px 10px 30px;
-	margin: 0px 20px 10px 20px;
-	position: relative;
-	display: block;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    text-align: center;
-}
-.container > header h1{
-	font-size: 30px;
-	line-height: 35px;
-	position: relative;
-	font-weight: 400;
-	color: lightslategrey;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    padding: 0px 0px 5px 0px;
-}
-.container > header h1 span{
-	color: lightskyblue;
-	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
-}
-.container > header h2{
-	font-size: 16px;
-	font-style: italic;
-	color: #593741;
-	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
-}
-/* Header Style */
+
 
 #testSlide3 {
 	display: inline-block;
@@ -110,8 +76,15 @@ a{
 
 .center {
 	display: block;
-	padding-top: 80px;
 	text-align: -webkit-center;
+
+	background: #e0e3ec url(../img/8.png) repeat top left; 
+	width:100%;
+	height:50%; 
+	font-weight: 60px;
+	font-size: 13px;
+	color: #cfcfcf;
+	z-index: 99999;
 }
 
 
