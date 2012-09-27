@@ -61,38 +61,34 @@
 <div class="container">
 
 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.php">Find A School</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav" style="float:right;">
+              <li class="active">
+                <a href="./results.php">Find A School</a>
+              </li>
+              <li class="disabled">
+                <a href="#">Compare Schools</a>
+              </li>
+              <li class="disabled">
+                <a href="#">Compare Counties</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+         </div>
+        </div>
 
-<div cellpadding="0" cellspacing="0" border="0" class="display" id="example"> <!-- display school details. -->
+         
 
-   <?php echo $_GET['SchoolName']; $School=$_GET['SchoolName'];?>
-</div>
-
-
-</div> <!-- /container -->
-<footer style="float;right;">
-              
-  <a href="http://www.code4kenya.org">&copy; code4kenya 2012</a>
-      
-</footer>
-  
-
-
-  <script type="text/javascript" src="js/data.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.0.min.js"><\/script>')</script>
-  
-  <script src="js/bootstrap.min.js"></script>
-  
-    
-  <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-
-  
-</body>
-</html>
+<header style="margin-top:50px;">
+     
+    </header> 

@@ -47,7 +47,7 @@ $(document).ready(function(){
           <div class="nav-collapse collapse">
             <ul class="nav" style="float:right;">
               <li class="active">
-                <a href="./results.php">Find A School</a>
+                <a href="./index.php">Find A School</a>
               </li>
               <li class="disabled">
                 <a href="#">Compare Schools</a>
