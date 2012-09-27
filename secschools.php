@@ -7,25 +7,22 @@
 
 
 
-
-
-
 <?php
 
  $query = mysql_real_escape_string($schools);
  require_once ('config.php');
  
- $sql = mysql_query("SELECT * FROM kcseresults where SchoolName =$schools;");
+ $sql = mysql_query("SELECT * FROM kcseresults WHERE SchoolName ='$schools'")or Die(mysql_error());
  while($row = mysql_fetch_array($sql))
  {
  echo "<div style='width:250px; float:left;''>
-      <div>".$row['Year']."</div>
-      <div>".$row['DistrictName']."</div>
-      <div>".$row['County']."</div>
-      <div>".$row['Gender']."</div>
-      <div>".$row['GradeAtained']."</div>
-      <div>".$row['MeanGrade']."</div>
-      <div>".$row['Frequency']."</div>
+      <div class='yearbase'>".$row['Year']."</div><br />
+      <div>".$row['DistrictName']."</div><br />
+      <div>".$row['County']."</div><br />
+      <div>".$row['Gender']."</div><br />
+      <div>".$row['GradeAttained']."</div><br />
+      <div>".$row['MeanGrade']."</div><br />
+      <div>".$row['Frequency']."</div><br />
 
       </div>";
 }

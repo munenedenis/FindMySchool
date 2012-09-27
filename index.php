@@ -52,7 +52,7 @@
 //get category id from the database 
  
  echo $_GET['SchoolName']; $schools=$_GET['SchoolName'];
- $query = mysql_real_escape_string($location);
+ $query = mysql_real_escape_string($schools);
  require_once ('config.php');
  
  $sql = mysql_query("SELECT SchoolName FROM kcseresults GROUP BY SchoolName");

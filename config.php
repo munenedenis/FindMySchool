@@ -5,7 +5,6 @@ $db_pwd = '';
 
 $database = 'planb';
 
-
 if (!mysql_connect($db_host, $db_user, $db_pwd))
     die("Can't connect to database");
 
