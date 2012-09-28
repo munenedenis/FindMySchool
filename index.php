@@ -4,9 +4,10 @@
 
 <header class="center">
   
-  <h2 style="padding:30px 50px;"><form name="kcpemarks" action="dttblstest.php" method="get">If I scored &nbsp&nbsp<input class="input-small" type="text" placeholder="500" id="kcpemarks" name="kcpemarks">&nbsp&nbspMarks<br /> 
-    In my final KCPE results ...<br />
-    which Secondary schools would Accept me?<br /> </form></h2>
+  <br/><h2 style="padding:30px 50px;"><form name="kcpemarks" action="dttblstest.php" method="get">If I scored &nbsp&nbsp<input class="input-small" type="text" placeholder="500" id="kcpemarks" name="kcpemarks">&nbsp&nbspMarks 
+    In my <br />final KCPE results ...<br />
+    which Secondary schools would Accept me?<br /> 
+    </form></h2>
        
 </header>
 
