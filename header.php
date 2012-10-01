@@ -13,7 +13,7 @@
     <!-- new element added-->    <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
   <meta name="author" content="Code 4 Kenya | http://code4kenya.org">
 
-  <link rel="stylesheet" href="css/style.css"> <!--for boilerplate -->
+ <!-- <link rel="stylesheet" href="css/style.css"> for boilerplate --> 
   <link rel="stylesheet" href="css/bootstrap.min.css"> <!--for bootstrap -->
   <link rel="stylesheet" href="css/mystyle.css"> <!--overides bootstrap -->
 
@@ -49,16 +49,53 @@
         });
       });
     </script>
-</head>
 
-
-
-<body class="">
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
 
   
+
+
+
+<script type="text/javascript">
+var oTable;
+$(document).ready(function(){
+  oTable = $('#example').dataTable( {
+    "aaSorting": [[ 0, "desc" ]]
+  });
+
+});
+</script>
+
+
+
+
+
+<!-- liteAccordion css -->
+        <link href="css/liteaccordion.css" rel="stylesheet" />
+
+        <!-- jQuery -->        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+        <!-- easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+
+        <!-- liteAccordion js -->
+        <script src="js/liteaccordion.jquery.js"></script>
+
+        <!--[if lt IE 9]>
+            <script>
+                document.createElement('figure');
+                document.createElement('figcaption');           
+            </script>
+        <![endif]-->  
+
+
+
+  </head>
+  <body id="dt_example">
 <div class="container">
+
 
 
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -86,6 +123,3 @@
           </div>
          </div>
         </div>
-
-  
-
