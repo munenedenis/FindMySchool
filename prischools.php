@@ -1,153 +1,149 @@
-<?php echo "<?㼼浸⁬敶獲潩㵮ㄢ〮•湥潣楤杮∽瑵ⵦ∸㸿?".">"; ?><!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-    <!-- new element added-->    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title>Find My School</title>
-    <!-- new element added-->    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="description" content="Find My School">
-    <!-- new element added-->    <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
-  <meta name="author" content="Code 4 Kenya | http://code4kenya.org">
-
-  <link rel="stylesheet" href="css/style.css"> <!--for boilerplate -->
-  <link rel="stylesheet" href="css/bootstrap.min.css"> <!--for bootstrap -->
-  <link rel="stylesheet" href="css/mystyle.css"> <!--overides bootstrap -->
-
-  
-    <!-- new element added-->    <link rel="shortcut icon" href="../favicon.ico"> 
-
-      <!-- new element added-->    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
-    <!-- new element added-->    <link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
-  
-  
-
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+<?php include ('header.php'); ?>
 
 
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-5722599-10']);
-      _gaq.push(['_trackPageview']);
+ <br/><p> This are the Performance details for <?php echo $_GET['Primary_School_Name']; $schools=$_GET['Primary_School_Name'];?> for the last 5 years</p>
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-      
-      $(function() {
-        $("#c-cur-down").click(function() {
-          _gaq.push(["_trackPageview", "/current/download.html"]);
-        });
-        $("#c-cur-open").click(function() {
-          _gaq.push(["_trackPageview", "/current/open.html"]);
-        });
-      });
-    </script>
-</head>
-
-
-
-<body class="">
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  
-
-  
-<div class="container">
-<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="./index.php">Find A School</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav" style="float:right;">
-              <li class="active">
-                <a href="./results.php">Find A School</a>
-              </li>
-              <li class="disabled">
-                <a href="#">Compare Schools</a>
-              </li>
-              <li class="disabled">
-                <a href="#">Compare Counties</a>
-              </li>
-            </ul>
-          </div>
-          </div>
-         </div>
-        </div>
-
-        
-
-
-<div cellpadding="0" cellspacing="0" border="0" class="display" id="example"> <!-- display school details. -->
-
- <br/><p> This are the details for <?php echo $_GET['SchoolName']; $schools=$_GET['SchoolName'];?> </p>
-
-
-
-
-
-
+<div id="one">
+            <ol>
+                <li>
+                    <h2><span>2006 kcpe results</span></h2>
+                    <div>
+                      <figure>
+                       
 
 <?php
-
  $query = mysql_real_escape_string($schools);
  require_once ('config.php');
- 
- $sql = mysql_query("SELECT * FROM kcseresults where SchoolName =$schools;");
- while($row = mysql_fetch_array($sql))
+ $sql = mysql_query("SELECT * FROM kcpe2010 WHERE Year = '2006' AND Primary_School_Name ='$schools' ORDER BY 'Range_Of_Marks_Attained'")or Die(mysql_error());
+ if( mysql_num_rows($sql) > 0 )
  {
- echo "<div style='width:250px; float:left;''>
-      <div>".$row['Year']."</div>
-      <div>".$row['DistrictName']."</div>
-      <div>".$row['County']."</div>
-      <div>".$row['Gender']."</div>
-      <div>".$row['GradeAtained']."</div>
-      <div>".$row['MeanGrade']."</div>
-      <div>".$row['Frequency']."</div>
-
-      </div>";
+echo "<table><tr><th colspan='4'>2006 kcpe results</th></tr><tr><th>Range Of Marks Attained</th><th>No.Of Children</th></tr>";
+while($row = mysql_fetch_array($sql))
+{
+echo "<tr><td>".$row['Range_Of_Marks_Attained']."</td><td>".$row['No_Of_Children_In_Range']."</td></tr>";
 }
+}
+else{
+  echo"<p>This school did not enroll for national exams that year</p>";
+     }
 ?>
+</table>
+
+                      </figure>
+                    </div>
+                </li>
+                <li>
+                    <h2><span>2007 kcpe results</span></h2>
+                    <div>
+                        <figure>
+                            
+
+<?php
+ $query = mysql_real_escape_string($schools);
+ require_once ('config.php');
+ $sql = mysql_query("SELECT * FROM kcpe2010 WHERE Year = '2007' AND Primary_School_Name ='$schools' ORDER BY 'Range_Of_Marks_Attained'")or Die(mysql_error());
+ if( mysql_num_rows($sql) > 0 )
+ {
+echo "<table><tr><th colspan='4'>2007 kcpe results</th></tr><tr><th>Range Of Marks Attained</th><th>No.Of Children</th></tr>";
+while($row = mysql_fetch_array($sql))
+{
+echo "<tr><td>".$row['Range_Of_Marks_Attained']."</td><td>".$row['No_Of_Children_In_Range']."</td></tr>";
+}
+}
+else{
+  echo"<p>This school did not enroll for national exams that year</p>";
+     }
+?>
+</table>
+
+                        </figure>
+                    </div>
+                </li>
+                <li>
+                    <h2><span>2008 kcpe results</span></h2>
+                    <div>
+                        <figure>
+                            
+<?php
+ $query = mysql_real_escape_string($schools);
+ require_once ('config.php');
+ $sql = mysql_query("SELECT * FROM kcpe2010 WHERE Year = '2008' AND Primary_School_Name ='$schools' ORDER BY 'Range_Of_Marks_Attained'")or Die(mysql_error());
+ if( mysql_num_rows($sql) > 0 )
+ {
+echo "<table><tr><th colspan='4'>2008 kcpe results</th></tr><tr><th>Range Of Marks Attained</th><th>No.Of Children</th></tr>";
+while($row = mysql_fetch_array($sql))
+{
+echo "<tr><td>".$row['Range_Of_Marks_Attained']."</td><td>".$row['No_Of_Children_In_Range']."</td></tr>";
+}
+}
+else{
+  echo"<p>This school did not enroll for national exams that year</p>";
+     }
+?>
+</table>
+
+                        </figure>
+                    </div>
+                </li>
+                <li>
+                    <h2><span>2009 kcpe results</span></h2>
+                    <div>
+                        <figure>
+                            
+<?php
+ $query = mysql_real_escape_string($schools);
+ require_once ('config.php');
+ $sql = mysql_query("SELECT * FROM kcpe2010 WHERE Year = '2009' AND Primary_School_Name ='$schools' ORDER BY 'Range_Of_Marks_Attained'")or Die(mysql_error());
+ if( mysql_num_rows($sql) > 0 )
+ {
+echo "<table><tr><th colspan='4'>2009 kcpe results</th></tr><tr><th>Range Of Marks Attained</th><th>No.Of Children</th></tr>";
+while($row = mysql_fetch_array($sql))
+{
+echo "<tr><td>".$row['Range_Of_Marks_Attained']."</td><td>".$row['No_Of_Children_In_Range']."</td></tr>";
+}
+}
+else{
+  echo"<p>This school did not enroll for national exams that year</p>";
+     }
+?>
+</table>
+
+                        </figure>
+                    </div>
+                </li>
+                <li>
+                    <h2><span>2010 kcpe results</span></h2>
+                    <div>
+                        <figure>
+
+<?php
+ $query = mysql_real_escape_string($schools);
+ require_once ('config.php');
+ $sql = mysql_query("SELECT * FROM kcpe2010 WHERE Year = '2010' AND Primary_School_Name ='$schools' ORDER BY 'Range_Of_Marks_Attained'")or Die(mysql_error());
+ if( mysql_num_rows($sql) > 0 )
+ {
+echo "<table><tr><th colspan='4'>2010 kcpe results</th></tr><tr><th>Range Of Marks Attained</th><th>No.Of Children</th></tr>";
+while($row = mysql_fetch_array($sql))
+{
+echo "<tr><td>".$row['Range_Of_Marks_Attained']."</td><td>".$row['No_Of_Children_In_Range']."</td></tr>";
+}
+}
+else{
+  echo"<p>This school did not enroll for national exams that year</p>";
+     }
+?>
+</table>
+
+                        </figure>
+                    </div>
+                </li>
+            </ol>
+            <noscript>
+                <p>Please enable JavaScript to get the full experience.</p>
+            </noscript>
+        </div>
 
 
-</div>
 
-
-</div> <!-- /container -->
-<footer style="float;right;">
-              
-  <a href="http://www.code4kenya.org">&copy; code4kenya 2012</a>
-      
-</footer>
-  
-
-
-  <script type="text/javascript" src="js/data.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.0.min.js"><\/script>')</script>
-  
-  <script src="js/bootstrap.min.js"></script>
-  
-    
-  <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-
-  
-</body>
-</html>
+<?php include('footer.php'); ?>

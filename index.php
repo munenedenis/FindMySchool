@@ -23,7 +23,7 @@
 
 <div class="schoollist1"> <!-- primary schools -->
           <label>PRIMARY SCHOOLS</label><form name="schools" action="prischools.php" method="get">
-            <select name="County" onChange="window.location.href= 'prischools.php?SchoolName='+this.form.SchoolName.options[this.form.SchoolName.selectedIndex].value">
+            <select name="Primary_School_Name" onChange="window.location.href= 'prischools.php?Primary_School_Name='+this.form.Primary_School_Name.options[this.form.Primary_School_Name.selectedIndex].value">
 
 <?php
 //get category id from the database 
