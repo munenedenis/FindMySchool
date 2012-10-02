@@ -54,7 +54,13 @@
   
 
   
-
+<style type="text/css">
+      @import "media/css/demo_page.css";
+      @import "media/css/demo_table.css";
+    </style>
+    <script type="text/javascript" language="javascript" src="media/js/jquery.js"></script>
+       <script type="text/javascript" language="javascript" src="media/js/jquery.dataTables.js"></script>
+    <script class="jsbin" src="http://datatables.net/download/build/jquery.dataTables.nightly.js"></script>
 
 
 <script type="text/javascript">
@@ -66,6 +72,8 @@ $(document).ready(function(){
 
 });
 </script>
+
+
 
 
 
