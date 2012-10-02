@@ -131,7 +131,7 @@ else
 echo "<tr><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$row['MeanGrade']."</td><td>".$row['Frequency']."</td></tr>";
 }
 }
-
+/*
 elseif (mysql_num_rows($sql) > 8) 
 {
  echo "<table cellpadding='0' cellspacing='0' border='0' class='display' id='example'><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
@@ -141,7 +141,7 @@ elseif (mysql_num_rows($sql) > 8)
 echo "<tr style='font-size:8px; height:7px;'><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$row['MeanGrade']."</td><td>".$row['Frequency']."</td></tr>";
 }
 }
-
+*/
 else
 {
   echo "This School did not enroll for national exams that year.";
