@@ -132,7 +132,7 @@ echo "<tr><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$ro
 }
 }
 
-elseif (mysql_num_rows($sqk) > 8) 
+elseif (mysql_num_rows($sql) > 8) 
 {
  echo "<table cellpadding='0' cellspacing='0' border='0' class='display' id='example'><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
 
