@@ -10,17 +10,17 @@
     In my <br />final KCPE results ...<br />
     which Secondary schools would Accept me?<br /> 
     </form></h2>
-       
-</header>
-<div class="findout">
+     <div class="findout">
 <button class="btn-large" type="button">Find Out<button>
 </div>
+  
+</header>
 
 <hr><br />
 <h5> OR TRACK YOUR SCHOOLS PERFOMANCE OVER THE YEARS <h5/><br />
 <hr>
 
-
+<div class="prisec">
 <div class="schoollist1"> <!-- primary schools -->
           <label>PRIMARY SCHOOLS</label><form name="schools" action="prischools.php" method="get">
             <select name="Primary_School_Name" onChange="window.location.href= 'prischools.php?Primary_School_Name='+this.form.Primary_School_Name.options[this.form.Primary_School_Name.selectedIndex].value">
@@ -42,7 +42,7 @@
 
 </select>
 </form>
-
+</div>
 <div class="schoollist2">
         <!-- secondary schools -->
           <LABEL>SECONDARY SCHOOLS</LABEL><form name="schools" action="secschools.php" method="get">
@@ -66,6 +66,6 @@
 </select>
 </form>
 
-        </div>
-
+</div>
+</div>
    <?php include('footer.php'); ?>

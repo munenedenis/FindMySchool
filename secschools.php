@@ -4,7 +4,7 @@
 
  <br/><p> This are the Performance details for <?php echo $_GET['SchoolName']; $schools=$_GET['SchoolName'];?> for the last 5 years</p>
 
-<div id="one">
+<div id="one" style="margin-left:auto; margin-right:auto;">
             <ol>
                 <li>
                     <h2><span>2006 kcse results</span></h2>
