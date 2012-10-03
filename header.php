@@ -54,31 +54,6 @@
   
 
   
-<style type="text/css">
-
-      @import "media/css/demo_table.css";
-    </style>
-    <script type="text/javascript" language="javascript" src="media/js/jquery.js"></script>
-       <script type="text/javascript" language="javascript" src="media/js/jquery.dataTables.js"></script>
-    <script class="jsbin" src="http://datatables.net/download/build/jquery.dataTables.nightly.js"></script>
-
-
-<script type="text/javascript">
-var oTable;
-$(document).ready(function(){
-  oTable = $('#example').dataTable( {
-    "aaSorting": [[ 0, "desc" ]]
-  });
-
-});
-</script>
-
-
-
-
-
-
-
 <!-- liteAccordion css -->
         <link href="css/liteaccordion.css" rel="stylesheet" />
 
@@ -101,7 +76,7 @@ $(document).ready(function(){
 
 
   </head>
-  <body id="dt_example">
+  <body>
 <div class="container">
 
 
