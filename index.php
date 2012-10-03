@@ -25,19 +25,19 @@
 <div class="prisec">
 <div class="schoollist1"> <!-- primary schools -->
           <label>PRIMARY SCHOOLS</label><form name="schools" action="prischools.php" method="get">
-            <select name="Primary_School_Name" onChange="window.location.href= 'prischools.php?Primary_School_Name='+this.form.Primary_School_Name.options[this.form.Primary_School_Name.selectedIndex].value">
+            <select name="PrimarySchoolName" onChange="window.location.href= 'prischools.php?PrimarySchoolName='+this.form.PrimarySchoolName.options[this.form.PrimarySchoolName.selectedIndex].value">
 
 <?php
 //get category id from the database 
  
- echo $_GET['Primary_School_Name']; $schools=$_GET['Primary_School_Name'];
+ echo $_GET['PrimarySchoolName']; $schools=$_GET['PrimarySchoolName'];
  $query = mysql_real_escape_string($location);
  require_once ('config.php');
  
- $sql = mysql_query("SELECT Primary_School_Name FROM kcpe2010 GROUP BY Primary_School_Name");
+ $sql = mysql_query("SELECT PrimarySchoolName FROM kcpe_exam_scores_2006_to_2010 GROUP BY PrimarySchoolName");
  while($row = mysql_fetch_array($sql))
  {
- echo "<option value=\"".$row['Primary_School_Name']."\">".$row['Primary_School_Name']."</option> \n  ";
+ echo "<option value=\"".$row['PrimarySchoolName']."\">".$row['PrimarySchoolName']."</option> \n  ";
  }
 
 ?>
