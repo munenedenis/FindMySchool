@@ -208,7 +208,7 @@ footer a:visited{
 		YOUR STYLESHEET
 	   ----------------------------
 	*/
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='table-images/back.png',sizingMethod='crop');
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/back.png',sizingMethod='crop');
 	background: none;
 }	
 #background-image tbody tr:hover td
