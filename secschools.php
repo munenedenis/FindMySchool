@@ -18,7 +18,7 @@
  $sql = mysql_query("SELECT * FROM kcseresults WHERE Year = '2006' AND SchoolName ='$schools' ORDER BY 'GradeAttained'")or Die(mysql_error());
  if( mysql_num_rows($sql) > 0 )
  {
-echo "<table cellpadding='0' cellspacing='0' border='0'><thead><tr><th colspan='4'>2006 kcse results</th></tr><tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
+echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'>2006 kcse results</th></tr><tr><th>Gender</th><th>Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
 while($row = mysql_fetch_array($sql))
 {
 echo "<tr><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$row['MeanGrade']."</td><td>".$row['Frequency']."</td></tr>";
@@ -45,7 +45,7 @@ else{
  $sql = mysql_query("SELECT * FROM kcseresults WHERE Year = '2007' AND SchoolName ='$schools'")or Die(mysql_error());
  if (mysql_num_rows($sql) > 0 ) 
  {
- echo "<table cellpadding='0' cellspacing='0' border='0'><thead><tr><th colspan='4'>2007 kcse results</th></tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
+ echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'>2007 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
  while($row = mysql_fetch_array($sql))
 {
 echo "<tr><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$row['MeanGrade']."</td><td>".$row['Frequency']."</td></tr>";
@@ -71,7 +71,7 @@ else
  require_once ('config.php');
  $sql = mysql_query("SELECT * FROM kcseresults WHERE Year = '2008' AND SchoolName ='$schools'")or Die(mysql_error());
 if (mysql_num_rows($sql) > 0 ) {
- echo "<table cellpadding='0' cellspacing='0' border='0' ><thead><tr><th colspan='4'2008 kcse results</th></tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
+ echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'2008 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
 
  while($row = mysql_fetch_array($sql))
 {
@@ -98,7 +98,7 @@ else
  require_once ('config.php');
  $sql = mysql_query("SELECT * FROM kcseresults WHERE Year = '2009' AND SchoolName ='$schools'")or Die(mysql_error());
  if (mysql_num_rows($sql) > 0 ) {
- echo "<table cellpadding='0' cellspacing='0' border='0' ><thead><tr><th colspan='4'>2009 kcse results</th></tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
+ echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'>2009 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
 
  while($row = mysql_fetch_array($sql))
 {
@@ -124,7 +124,7 @@ else
  require_once ('config.php');
  $sql = mysql_query("SELECT * FROM kcseresults WHERE Year = '2010' AND SchoolName ='$schools'")or Die(mysql_error());
  if (mysql_num_rows($sql) > 0 ) {
- echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
+ echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
 
  while($row = mysql_fetch_array($sql))
 {
@@ -134,7 +134,7 @@ echo "<tr><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$ro
 /*
 elseif (mysql_num_rows($sql) > 8) 
 {
- echo "<table cellpadding='0' cellspacing='0' border='0' ><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th>GradeAttained</th><th>MeanGrade</th><th>Frequency</th></tr></thead><tbody>";
+ echo "<table cellpadding='0' cellspacing='0' border='0' ><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
 
  while($row = mysql_fetch_array($sql))
 {

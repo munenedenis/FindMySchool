@@ -172,22 +172,22 @@ footer a:visited{
 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 	font-size: 12px;
-	margin: 45px;
-	width: 480px;
+	margin: 15px;
+	width: 400px;
 	text-align: left;
 	border-collapse: collapse;
-	background: url('table-images/blurry.jpg') 330px 59px no-repeat;
+	background: url('img/blurry.jpg') 330px 59px no-repeat;
 }
 #background-image th
 {
-	padding: 12px;
+	padding: 5px;
 	font-weight: normal;
 	font-size: 14px;
 	color: #339;
 }
 #background-image td
 {
-	padding: 9px 12px;
+	padding: 2px 8px;
 	color: #669;
 	border-top: 1px solid #fff;
 }
@@ -197,7 +197,7 @@ footer a:visited{
 }
 #background-image tbody td
 {
-	background: url('table-images/back.png');
+	background: url('img/back.png');
 }
 * html #background-image tbody td
 {
