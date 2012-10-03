@@ -71,7 +71,7 @@ else
  require_once ('config.php');
  $sql = mysql_query("SELECT * FROM kcseresults WHERE Year = '2008' AND SchoolName ='$schools'")or Die(mysql_error());
 if (mysql_num_rows($sql) > 0 ) {
- echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'2008 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
+ echo "<table cellpadding='0' cellspacing='0' border='0' id='background-image'><thead><tr><th colspan='4'>2008 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
 
  while($row = mysql_fetch_array($sql))
 {
