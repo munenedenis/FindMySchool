@@ -176,7 +176,7 @@ footer a:visited{
 	width: 400px;
 	text-align: left;
 	border-collapse: collapse;
-	background: url('img/blurry.jpg') 330px 59px no-repeat;
+/*	background: url('../img/blurry.jpg') 330px 59px no-repeat;   */
 }
 #background-image th
 {
@@ -197,7 +197,7 @@ footer a:visited{
 }
 #background-image tbody td
 {
-	background: url('img/back.png');
+	background: url('../img/back.png');
 }
 * html #background-image tbody td
 {
