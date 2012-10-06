@@ -15,7 +15,7 @@
 <?php
  $query = mysql_real_escape_string($schools);
  require_once ('config.php');
- $sql = mysql_query("SELECT * FROM kcpe_exam_scores_2006_to_2010 WHERE Year = '2006' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
+ $sql = mysql_query("SELECT * FROM kcperesults WHERE Year = '2006' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
  if( mysql_num_rows($sql) > 0 )
  {
 echo "<table><tr><th colspan='4'>2006 kcpe results</th></tr><tr><th>Gender</th><th>Range Of Marks</th><th>No.Of Children</th></tr>";
@@ -42,7 +42,7 @@ else{
 <?php
  $query = mysql_real_escape_string($schools);
  require_once ('config.php');
- $sql = mysql_query("SELECT * FROM kcpe_exam_scores_2006_to_2010 WHERE Year = '2007' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
+ $sql = mysql_query("SELECT * FROM kcperesults WHERE Year = '2007' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
  if( mysql_num_rows($sql) > 0 )
  {
 echo "<table><tr><th colspan='4'>2007 kcpe results</th></tr><tr><th>Gender</th><th>Range Of Marks</th><th>No.Of Children</th></tr>";
@@ -68,7 +68,7 @@ else{
 <?php
  $query = mysql_real_escape_string($schools);
  require_once ('config.php');
- $sql = mysql_query("SELECT * FROM kcpe_exam_scores_2006_to_2010 WHERE Year = '2008' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
+ $sql = mysql_query("SELECT * FROM kcperesults WHERE Year = '2008' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
  if( mysql_num_rows($sql) > 0 )
  {
 echo "<table><tr><th colspan='4'>2008 kcpe results</th></tr><tr><th>Gender</th><th>Range Of Marks</th><th>No.Of Children</th></tr>";
@@ -94,7 +94,7 @@ else{
 <?php
  $query = mysql_real_escape_string($schools);
  require_once ('config.php');
- $sql = mysql_query("SELECT * FROM kcpe_exam_scores_2006_to_2010 WHERE Year = '2009' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
+ $sql = mysql_query("SELECT * FROM kcperesults WHERE Year = '2009' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
  if( mysql_num_rows($sql) > 0 )
  {
 echo "<table><tr><th colspan='4'>2009 kcpe results</th></tr><tr><th>Gender</th><th>Range Of Marks</th><th>No.Of Children</th></tr>";
@@ -120,7 +120,7 @@ else{
 <?php
  $query = mysql_real_escape_string($schools);
  require_once ('config.php');
- $sql = mysql_query("SELECT * FROM kcpe_exam_scores_2006_to_2010 WHERE Year = '2010' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
+ $sql = mysql_query("SELECT * FROM kcperesults WHERE Year = '2010' AND PrimarySchoolName ='$schools' ORDER BY 'RangeOfMarksAttained'")or Die(mysql_error());
  if( mysql_num_rows($sql) > 0 )
  {
 echo "<table><tr><th colspan='4'>2010 kcpe results</th></tr><tr><th>Gender</th><th>Range Of Marks</th><th>No.Of Children</th></tr>";

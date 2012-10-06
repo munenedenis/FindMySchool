@@ -23,6 +23,11 @@ $(document).ready(function(){
   oTable = $('#example').dataTable( {
     "aaSorting": [[ 0, "desc" ]]
   });
+$('#example').delegate('tbody > tr > td', 'click', function ()
+{
+    // 'this' refers to the current <td>, if you need information out of it
+    window.open('secschools.php');
+});
 
 });
 </script>
@@ -71,7 +76,7 @@ $(document).ready(function(){
 <h1><form name="kcpemarks" action="dttblstest.php" method="get">Try Different Marks?&nbsp<input class="input-small" required type="text" placeholder="500" id="kcpemarks" name="kcpemarks">:  
 select originating county.
 
-<select name="County">
+<select name="County" style="width:150px;">
 
 <?php
 //get category id from the database 
@@ -80,7 +85,7 @@ select originating county.
  $query = mysql_real_escape_string($location);
  require_once ('config.php');
  
- $sql = mysql_query("SELECT County FROM kcpe2010 GROUP BY County");
+ $sql = mysql_query("SELECT County FROM kcperesults GROUP BY County");
  while($row = mysql_fetch_array($sql))
  {
  echo "<option value=\"".$row['County']."\">".$row['County']."</option> \n  ";

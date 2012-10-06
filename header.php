@@ -5,26 +5,22 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-    <!-- new element added-->    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>Find My School</title>
-    <!-- new element added-->    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- new element added-->    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta name="description" content="Find My School">
-    <!-- new element added-->    <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+    <!-- new element added-->    
   <meta name="author" content="Code 4 Kenya | http://code4kenya.org">
 
- <!-- <link rel="stylesheet" href="css/style.css"> for boilerplate --> 
+
   <link rel="stylesheet" href="css/bootstrap.min.css"> <!--for bootstrap -->
   <link rel="stylesheet" href="css/mystyle.css"> <!--overides bootstrap -->
+  <link rel="shortcut icon" href="../favicon.ico"> 
 
-  
-    <!-- new element added-->    <link rel="shortcut icon" href="../favicon.ico"> 
-
-      <!-- new element added-->    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
-    <!-- new element added-->    <link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
-  
-  
-
+  <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+  <!--<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'> -->
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 
 
@@ -57,13 +53,9 @@
 <!-- liteAccordion css -->
         <link href="css/liteaccordion.css" rel="stylesheet" />
 
-        <!-- jQuery -->        
+   
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-        <!-- easing -->
         <script src="js/jquery.easing.1.3.js"></script>
-
-        <!-- liteAccordion js -->
         <script src="js/liteaccordion.jquery.js"></script>
 
         <!--[if lt IE 9]>

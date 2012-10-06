@@ -131,17 +131,17 @@ else
 echo "<tr><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$row['MeanGrade']."</td><td>".$row['Frequency']."</td></tr>";
 }
 }
-/*
-elseif (mysql_num_rows($sql) > 8) 
+
+elseif (mysql_num_rows($sql) > 7) 
 {
- echo "<table cellpadding='0' cellspacing='0' border='0' ><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
+ echo "<table><thead><tr><th colspan='4'>2010 kcse results</th></tr><th>Gender</th><th> Grade<br />Attained</th><th>Mean<br />Grade</th><th>Number of<br />Students</th></tr></thead><tbody>";
 
  while($row = mysql_fetch_array($sql))
 {
 echo "<tr style='font-size:8px; height:7px;'><td>".$row['Gender']."</td><td>".$row['GradeAttained']."</td><td>".$row['MeanGrade']."</td><td>".$row['Frequency']."</td></tr>";
 }
 }
-*/
+
 else
 {
   echo "This School did not enroll for national exams that year.";
