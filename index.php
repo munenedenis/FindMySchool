@@ -14,7 +14,7 @@
 </header>
 
 <div class="findout">
-<button class="btn-large" type="button" id="kcpemarks">Find Out</button>
+<button class="btn-large" type="button" id="kcpemarks" action="dttblstest.php">Find Out</button>
 </div>
 
 
