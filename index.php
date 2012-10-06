@@ -8,14 +8,14 @@
   <br/><h2 style="padding:50px 50px;"><form name="kcpemarks" action="dttblstest.php" method="get">If I scored &nbsp&nbsp<input class="input-small" type="text" placeholder="500" id="kcpemarks" name="kcpemarks">&nbsp&nbspMarks 
     In my <br />final KCPE results ...<br />
     which Secondary schools would Accept me?<br /> 
-    </form></h2>
-     
+         
   
 </header>
 
 <div class="findout">
-<button class="btn-large" type="button" id="kcpemarks" action="dttblstest.php">Find Out</button>
-</div>
+<button class="btn-large" type="submit" id="kcpemarks" action="dttblstest.php">Find Out</button>
+</div></form></h2>
+
 
 
 <hr><br />
