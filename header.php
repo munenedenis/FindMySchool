@@ -45,6 +45,7 @@
         });
       });
     </script>
+<!-- hack for ie browser (assuming that ie is a browser) -->
 
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
@@ -58,14 +59,24 @@
         <script src="js/jquery.easing.1.3.js"></script>
         <script src="js/liteaccordion.jquery.js"></script>
 
-        <!--[if lt IE 9]>
-            <script>
+<!-- hack for ie browser (assuming that ie is a browser) -->
+
+        <!--[if lt IE 9]> 
+            <script> 
                 document.createElement('figure');
                 document.createElement('figcaption');           
             </script>
         <![endif]-->  
 
 
+<script> //for stupid browsers that don't allow autofocus (the jquery super-fast method i dint know about)
+
+  $(document).bind('autofocus_ready', function() {
+    if (!("autofocus" in document.createElement("input"))) {
+      $("#kcpemarks").focus();
+    }
+  });
+</script>
 
   </head>
   <body>

@@ -23,7 +23,8 @@ $(document).ready(function(){
   oTable = $('#example').dataTable( {
     "aaSorting": [[ 0, "desc" ]]
   });
-$('#example').delegate('tbody > tr > td', 'click', function ()
+$('#example').delegate('tbody > tr > td', 'click', function () //I am not sure why this works but it fixes the problem.
+
 {
     // 'this' refers to the current <td>, if you need information out of it
     window.open('secschools.php');

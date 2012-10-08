@@ -5,20 +5,20 @@
 
 <header class="center">
   
-  <br/><h2 style="padding:50px 50px;"><form name="kcpemarks" action="dttblstest.php" method="get">If I scored &nbsp&nbsp<input class="input-small" type="text" placeholder="500" id="kcpemarks" name="kcpemarks">&nbsp&nbspMarks 
+  <br/><h2 style="padding:50px 50px;">
+  <form name="kcpemarks" action="dttblstest.php" method="get" autocomplete="off">If I scored &nbsp&nbsp
+  <input class="input-small" type="text" pattern="[0-9]{3}" placeholder="500" id="kcpemarks" name="kcpemarks" autofocus required min="100" max="500">&nbsp&nbspMarks 
     In my <br />final KCPE results ...<br />
-    which Secondary schools would Accept me?<br /> 
-         
+    which Secondary schools would Accept me?<br />      
+ <script>$(document).trigger('autofocus_ready');</script> 
   
+<button class="btn-large" type="submit" id="kcpemarks" action="dttblstest.php">Find Out</button>
+</form></h2>
+
 </header>
 
-<div class="findout">
-<button class="btn-large" type="submit" id="kcpemarks" action="dttblstest.php">Find Out</button>
-</div></form></h2>
-
-
-
-<hr><br />
+<div class="extra">
+<br />
 <h5> TRACK YOUR SCHOOLS PERFOMANCE OVER THE YEARS <h5/><br />
 <hr>
 
@@ -73,4 +73,5 @@
 
 </div>
 </div>
+</div> <!--extra -->
    <?php include('footer.php'); ?>
