@@ -12,7 +12,8 @@
 *
 **************************************************/
 /****************************************** Core */
-.liteAccordion { text-align: left; font: 'Helvetica Neue', Verdana, Arial, sans-serif; -webkit-tap-highlight-color: transparent }
+
+.liteAccordion {text-align: center; font: 'Helvetica Neue', Verdana, Arial, sans-serif; -webkit-tap-highlight-color: transparent }
 .liteAccordion > ol { position: relative; overflow: hidden; height: 100%; margin: 0; padding: 0; list-style-type: none }
 .liteAccordion .slide > h2 { 
     color: black;
