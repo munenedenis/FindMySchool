@@ -169,18 +169,18 @@ else
     <div>
         <h6>Write a Review about This School</h6>
     </div>
-    <div>
+    <div><br />
         <label>Your Name</label><input type="text" name="name" id="name" value="" placeholder="Name">
-    </div>
+    </div><br />
     <div>
         <label>Your Email</label><input type="email" name="email" id="email" value="" placeholder="Email">
-    </div>
+    </div><br/>
     <div>
-        <label>Your Mind</label><textarea rows="10" cols="5" name="comment" id="comment" placeholder="Be the first to review this school"></textarea>
-    </div>
+        <label>Your Word</label><textarea rows="10" cols="5" name="comment" id="comment" placeholder="Be the first to review this school"></textarea>
+    </div><br />
     <div>
         <Label>Post it</Label><input type="submit" name="submit" value="Add Comment">
-    </div>
+    </div><br />
     
 </div>
 

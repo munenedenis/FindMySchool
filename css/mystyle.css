@@ -291,6 +291,7 @@ footer a:visited{
 
 
 #comment_form {
+	float: left;
 	margin-top: 100px;
 	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
 	font-size: 13px;
@@ -299,7 +300,7 @@ footer a:visited{
 #comment_form input, #comment_form textarea {
 	border: 4px solid rgba(0,0,0,0.1);
 	padding: 8px 10px;
-	
+	float: left;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -309,9 +310,11 @@ footer a:visited{
 
 #comment_form textarea {
 	width: 350px;
+	float:left;
 }
 
 #comment_form input[type="submit"] {
+	float:left;
 	cursor: pointer;
 	background: -webkit-linear-gradient(top, #efefef, #ddd);
 	background: -moz-linear-gradient(top, #efefef, #ddd);
@@ -342,5 +345,6 @@ footer a:visited{
 }
 
 #comment_form div {
+	float:left;
 	margin-bottom: 8px;
 }
