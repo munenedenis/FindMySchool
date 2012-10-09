@@ -78,6 +78,36 @@
   });
 </script>
 
+
+
+
+
+
+        <meta name="keywords" content="tabs, css3, transition, checked, pseudo-class, label, css-only, sibling combinator" />
+       
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style4.css" />
+    <script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+      <style>
+        .content{
+          height: auto;
+          margin: 0;
+        }
+        .content div {
+          position: relative;
+        }
+      </style>
+    <![endif]-->
+
+
+
+
+
+
+
+
   </head>
   <body>
 <div class="container">
@@ -109,3 +139,8 @@
           </div>
          </div>
         </div>
+
+
+
+
+
