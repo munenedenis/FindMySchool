@@ -14,12 +14,6 @@ hr{width:100%; margin:5px 0;border:0;border-top:1px solid #eeeeee;border-bottom:
 
 
 
-header {
-	margin-top: 5px;
-	text-align: center;
-	font-weight: 100px;
-}
-
 /* CSS reset */
 html {
 /*	background:url('../img/bg.png') no-repeat center center; */
@@ -32,68 +26,52 @@ html {
 	/* General Demo Style */
 }
 
-body{
+body
+{
 	background: #e0e3ec url(../img/bg.png) repeat top left; 
-	font-weight: 100;
 	font-size: 15px;
 	color: #593741;
-	overflow-y: scroll;
+	overflow-y: scroll; 
 	margin-top: 5%;
-	padding:10px;
+
     padding-bottom:45px;   /* Height of the footer */
     min-height:100%;
     text-align: center;
+    -webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
+
+
 
 
 a{
 	color: #333;
 	text-decoration: none;
 }
-.container{
-	width: 90%;
-	position: relative;
+
+.container
+{
+
 	text-align: center;
 
 }
 
-.row-fluid .span2{
+.row-fluid .span2
+{
 	background-color: #F0F0F0 ;
 	
 }
-.clr{
+
+.clr
+{
 	clear: both;
 }
-.container > header{
-	padding: 20px 30px 10px 30px;
-	margin: 0px 20px 10px 20px;
-	position: relative;
-	display: block;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    text-align: center;
-}
-.container > header h1{
-	font-size: 30px;
-	line-height: 35px;
-	position: relative;
-	font-weight: 400;
-	color: lightslategrey;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    padding: 0px 0px 5px 0px;
-}
-.container > header h1 span{
-	color: lightskyblue;
-	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
-}
-.container > header h2{
-	font-size: 16px;
-	font-style: italic;
-	color: #593741;
-	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
-}
-/* Header Style */
 
-#testSlide3 {
+
+
+#testSlide3 
+{
 	display: inline-block;
 	border: 1px solid #b19099;
 	padding: 4px 10px 3px;
@@ -103,17 +81,129 @@ a{
 }
 
 
-.btn .dropdown-toggle {
+.btn .dropdown-toggle 
+{
 	width:100%;
 }
 
 
-.center {
+header.center 
+{
 	display: block;
-	padding-top: 80px;
 	text-align: -webkit-center;
+	position: fixed;
+	background: #e0e3ec url(../img/8.png) repeat top left; 
+	width:100%;
+	height:50%; 
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right:0;
+	top:0;
+	font-weight: 60px;
+	font-size: 13px;
+	color: #cfcfcf;
+	*z-index: 9999;
+
+	-webkit-box-shadow: 0 0 5px 5px#888;
+	   -moz-box-shadow: 0 0 5px 5px #888;
+			box-shadow: 0 0 5px 5px #888;
 }
 
+header.center>h2 
+{
+	position: fixed; /*Why the f*** didn't I think of this?! :)))))))) */
+	left:0;
+	right:0;
+	margin-top: 5%;
+	margin-bottom: auto;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+
+.btn-large { 
+
+	color: #000;
+	background-color: #fff;
+	outline-color: #000;
+	margin-top: 65px;
+	/*margin-bottom: -10px;*/
+	font-size: 24px;
+	padding: 9px 25px;
+	z-index: 9999999;
+
+	-webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
+       -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
+			box-shadow:0 5px 7px 5px rgba(0, 0, 0, 0.2);
+	
+	-webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+}
+
+.extra {
+	position:fixed;
+	height:45%;
+	margin-left: auto;
+	margin-right: auto;
+
+	left:0;
+	right:0;
+	bottom:0;
+}
+.prisec {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 10px;
+	left:0;
+	right:0;
+	
+
+}	
+
+.schoollist1 {
+
+	display: block;
+	float: left;
+	width:300px;
+	margin-left: 250px;
+	margin-right: auto;
+	padding-right: 20px;
+}
+
+.schoollist2 {
+
+	display: block;
+	float: left;
+	width:300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+}
+
+.yearbase
+{
+	background-color: #c0c0c0;
+}
+
+
+input:focus:required:invalid,textarea:focus:required:invalid,select:focus:required:invalid
+{
+color:#b94a48;
+border: 2px solid #ff0000;
+}
+input:focus:required:invalid:focus,textarea:focus:required:invalid:focus,select:focus:required:invalid:focus
+{
+border-color:#fff;-webkit-box-shadow:0 0 6px #f8b9b7;-moz-box-shadow:0 0 6px #f8b9b7;box-shadow:0 0 6px #f8b9b7;
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button 
+{
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 
 footer {
    
@@ -138,6 +228,7 @@ footer a{
 	top: 0;
 }
 
+
 footer a:visited{
 	color: #00FF00;
 	font-size: 12px;
@@ -148,3 +239,111 @@ footer a:visited{
 	top: 0;
 }
 
+
+
+#background-image
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 15px;
+	width: 400px;
+	text-align: left;
+	border-collapse: collapse;
+/*	background: url('../img/blurry.jpg') 330px 59px no-repeat;   */
+}
+#background-image th
+{
+	padding: 5px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #339;
+}
+#background-image td
+{
+	padding: 2px 5px;
+	color: #669;
+	border-top: 1px solid #fff;
+}
+#background-image tfoot td
+{
+	font-size: 11px;
+}
+#background-image tbody td
+{
+	background: url('../img/back.png');
+}
+* html #background-image tbody td
+{
+	/* 
+	   ----------------------------
+		PUT THIS ON IE6 ONLY STYLE 
+		AS THE RULE INVALIDATES
+		YOUR STYLESHEET
+	   ----------------------------
+	*/
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/back.png',sizingMethod='crop');
+	background: none;
+}	
+#background-image tbody tr:hover td
+{
+	color: #339;
+	background: none;
+}
+
+
+
+
+#comment_form {
+	margin-top: 100px;
+	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+	font-size: 13px;
+}
+
+#comment_form input, #comment_form textarea {
+	border: 4px solid rgba(0,0,0,0.1);
+	padding: 8px 10px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	outline: 0;
+}
+
+#comment_form textarea {
+	width: 350px;
+}
+
+#comment_form input[type="submit"] {
+	cursor: pointer;
+	background: -webkit-linear-gradient(top, #efefef, #ddd);
+	background: -moz-linear-gradient(top, #efefef, #ddd);
+	background: -ms-linear-gradient(top, #efefef, #ddd);
+	background: -o-linear-gradient(top, #efefef, #ddd);
+	background: linear-gradient(top, #efefef, #ddd);
+	color: #333;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+	border: 1px solid #ccc;
+}
+
+#comment_form input[type="submit"]:hover {
+	background: -webkit-linear-gradient(top, #eee, #ccc);
+	background: -moz-linear-gradient(top, #eee, #ccc);
+	background: -ms-linear-gradient(top, #eee, #ccc);
+	background: -o-linear-gradient(top, #eee, #ccc);
+	background: linear-gradient(top, #eee, #ccc);
+	border: 1px solid #bbb;
+}
+
+#comment_form input[type="submit"]:active {
+	background: -webkit-linear-gradient(top, #ddd, #aaa);
+	background: -moz-linear-gradient(top, #ddd, #aaa);
+	background: -ms-linear-gradient(top, #ddd, #aaa);
+	background: -o-linear-gradient(top, #ddd, #aaa);
+	background: linear-gradient(top, #ddd, #aaa);	
+	border: 1px solid #999;
+}
+
+#comment_form div {
+	margin-bottom: 8px;
+}

@@ -18,24 +18,22 @@
   
 
 <script type="text/javascript">
+var oTable;
 $(document).ready(function(){
-  $('#example').dataTable( {
+  oTable = $('#example').dataTable( {
     "aaSorting": [[ 0, "desc" ]]
   });
+$('#example').delegate('tbody > tr > td', 'click', function () //I am not sure why this works but it fixes the problem.
+
+{
+    // 'this' refers to the current <td>, if you need information out of it
+    window.open('secschools.php');
 });
 
-
+});
 </script>
 
 
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#example tbody tr").live( 'click',function() {     
-     $(this).toggleClass('row_selected');    
-
-    } );
-} );
-</script>
 
   </head>
   <body id="dt_example">
@@ -55,7 +53,7 @@ $(document).ready(function() {
           <div class="nav-collapse collapse">
             <ul class="nav" style="float:right;">
               <li class="active">
-                <a href="./results.php">Find A School</a>
+                <a href="./index.php">Find A School</a>
               </li>
               <li class="disabled">
                 <a href="#">Compare Schools</a>
@@ -76,7 +74,33 @@ $(document).ready(function() {
     </header> 
 
 
-<h1><form name="kcpemarks" action="dttblstest.php" method="get">Try Different Marks?&nbsp<input class="input-small" required type="text" placeholder="500" id="kcpemarks" name="kcpemarks">  <input type="submit" name="xsubmit" value="submit"> </form></h1>
+<h1><form name="kcpemarks" action="dttblstest.php" method="get">Try Different Marks?&nbsp
+<input class="input-small" type="text" pattern="[0-9]{3}" placeholder="500" id="kcpemarks" name="kcpemarks" autofocus required min="100" max="500">:  
+select originating county.
+
+<select name="County" style="width:150px;">
+
+<?php
+//get category id from the database 
+ 
+ echo $_GET['County']; $location=$_GET['County'];
+ $query = mysql_real_escape_string($location);
+ require_once ('config.php');
+ 
+ $sql = mysql_query("SELECT County FROM kcperesults GROUP BY County");
+ while($row = mysql_fetch_array($sql))
+ {
+ echo "<option value=\"".$row['County']."\">".$row['County']."</option> \n  ";
+ }
+
+?>
+
+</select>
+
+</form>
+</h1>
+
+
 <p>with <?php echo $_GET['kcpemarks']; $marks=$_GET['kcpemarks'];?> Marks, These secondary schools would accept you. </p>
 <br />
 <hr align="center">
@@ -99,6 +123,8 @@ $(document).ready(function() {
 
           <?php
 require_once('config.php');
+
+
 $sql=mysql_query("SELECT * FROM f1selection WHERE Total <= $query group by SchoolCode ORDER BY Total ASC" );
 while($row=mysql_fetch_array($sql)){
 echo "<tr style='text-align:left;'>
@@ -122,6 +148,8 @@ echo "<tr style='text-align:left;'>
           </tr>
         </tfoot>
       </table>
+
+
 
 
 <footer style="float;right;">
