@@ -7,9 +7,9 @@
   
   <br/><h2 style="padding:50px 50px;">
   <form name="kcpemarks" action="dttblstest.php" method="get" autocomplete="off">If I scored &nbsp&nbsp
-  <input class="input-small" type="text" pattern="[0-9]{3}" placeholder="500" id="kcpemarks" name="kcpemarks" autofocus required min="100" max="500">&nbsp&nbspMarks 
+  <input class="input-small" type="number" pattern="[0-9]{3}" placeholder="500" id="kcpemarks" name="kcpemarks" autofocus required min="100" max="500">&nbsp&nbspMarks 
     In my <br />final KCPE results ...<br />
-    which Secondary schools would Accept me?<br />      
+    Which Secondary schools would Accept me?<br />      
  <script>$(document).trigger('autofocus_ready');</script> 
   
 <button class="btn-large" type="submit" id="kcpemarks" action="dttblstest.php">Find Out</button>
@@ -53,7 +53,7 @@
             <select name="SchoolName" onChange="window.location.href= 'secschools.php?SchoolName='+this.form.SchoolName.options[this.form.SchoolName.selectedIndex].value">
 
 <?php
-//get category id from the database 
+//get schools list from the database 
  
  echo $_GET['SchoolName']; $schools=$_GET['SchoolName'];
  $query = mysql_real_escape_string($schools);

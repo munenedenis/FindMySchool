@@ -74,7 +74,8 @@ $('#example').delegate('tbody > tr > td', 'click', function () //I am not sure w
     </header> 
 
 
-<h1><form name="kcpemarks" action="dttblstest.php" method="get">Try Different Marks?&nbsp<input class="input-small" required type="text" placeholder="500" id="kcpemarks" name="kcpemarks">:  
+<h1><form name="kcpemarks" action="dttblstest.php" method="get">Try Different Marks?&nbsp
+<input class="input-small" type="text" pattern="[0-9]{3}" placeholder="500" id="kcpemarks" name="kcpemarks" autofocus required min="100" max="500">:  
 select originating county.
 
 <select name="County" style="width:150px;">
