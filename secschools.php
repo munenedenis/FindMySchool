@@ -157,11 +157,6 @@ else
                 <p>Please enable JavaScript to get the full experience.</p>
             </noscript>
         </div>
-
-
-
-
-<div class="container">
         
             <section class="tabs">
                 <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
@@ -180,22 +175,19 @@ else
                         <h2>Write a Review</h2>
                         <p>Write a line of your own opinion about this school</p>
                         <div id="comment_form">
-    <div>
-        <h6>Write a Review about This School</h6>
-    </div>
-    <div>
-        <label>Your Name</label><input type="text" name="name" id="name" value="" placeholder="Name">
-    </div>
-    <div>
-        <label>Your Email</label><input type="email" name="email" id="email" value="" placeholder="Email">
-    </div>
-    <div>
-        <label>Your Mind</label><textarea rows="10" cols="5" name="comment" id="comment" placeholder="Be the first to review this school"></textarea>
-    </div>
-    <div>
-        <Label>Post it</Label><input type="submit" name="submit" value="Add Comment">
-    </div>
+                            <form>
     
+        <h6>Write a Review about This School</h6>
+   
+        <label>Your Name</label><input type="text" name="name" id="name" value="" placeholder="Name">
+  
+        <label>Your Email</label><input type="email" name="email" id="email" value="" placeholder="Email">
+   
+        <label>Your Mind</label><textarea rows="10" cols="5" name="comment" id="comment" placeholder="Be the first to review this school"></textarea>
+  
+        <Label>Post it</Label><input type="submit" name="submit" value="Add Comment">
+  
+    </form>
 </div>
                     </div>
                     <div class="content-2">
@@ -213,36 +205,6 @@ else
                     
                 </div>
             </section>
-        </div>
-
-
-
-<div id="comment_form">
-    <div>
-        <h6>Write a Review about This School</h6>
-    </div>
-    <div>
-        <label>Your Name</label><input type="text" name="name" id="name" value="" placeholder="Name">
-    </div>
-    <div>
-        <label>Your Email</label><input type="email" name="email" id="email" value="" placeholder="Email">
-    </div>
-    <div>
-        <label>Your Mind</label><textarea rows="10" cols="5" name="comment" id="comment" placeholder="Be the first to review this school"></textarea>
-    </div>
-    <div>
-        <Label>Post it</Label><input type="submit" name="submit" value="Add Comment">
-    </div>
-    
-</div>
-
-
-
-
-
-
-
-
-
+  
 
 <?php include('footer.php'); ?>
